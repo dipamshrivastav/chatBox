@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="ChatBoxApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Chat Box</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/angular/angular.min.js"></script>
+    <script src="node_modules/angular-route/angular-route.min.js"></script>
+</head>
+<body>
+
+<div class="landing-box" ng-view></div>
+
+
+<script src="app.js"></script>
+<script src="controllers/LandingController.js"></script>
+<script src="directives/chat-window.js"></script>
+<script src="prototypes/Message.js"></script>
+<script src="prototypes/Person.js"></script>
+</body>
+</html>

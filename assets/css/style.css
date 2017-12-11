@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.landing-box{
+    position: relative;
+    height: 100%;
+}
+
+.list-group{
+    width: 200px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+    z-index: 100;
+}
+
+.chat-area{
+    overflow: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.chat-box-container{
+    background-color: #ffffff;
+    height: 250px;
+    width: 250px;
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #cccccc;
+    position: relative;
+    bottom: 0;
+}
+
+.chat-box-container .chat-head{
+    clear: both;
+    color: #7b7b7b;
+    display: inline-table;
+    font-size: 15px;
+    padding: 5px;
+    width: 100%;
+}
+.chat-box-container .chat-body{
+    background: #d4e2ff;
+    height: 150px;
+    padding: 5px;
+    overflow: auto;
+}
+.chat-box-container .chat-footer{
+    bottom: 0;
+    position: relative;
+    padding: 5px;
+    width: 100%;
+}
+
+.message-input{
+    resize: none;
+    height: 40px !important;
+    overflow: hidden;
+}
+
+.message-send{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+.message{
+    display: list-item;
+}
+
+.display-flex{
+    display: -webkit-box;       /*OLD - iOS 6-, Safari 3.1-6*/
+    display: -moz-box;          /*OLD - Firefox 19- (buggy but mostly works)*/
+    display: -ms-flexbox;       /*TWEENER - IE 10 */
+    display: -webkit-flex;      /*NEW - Chrome */
+    display: flex;              /*NEW, Spec - Opera 12.1, Firefox 20+*/
+}
+
+.name-list{
+    list-style: none;
+}

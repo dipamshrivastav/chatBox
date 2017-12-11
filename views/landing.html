@@ -1,0 +1,10 @@
+    <div class="list-group">
+        <a href="" class="list-group-item" ng-repeat="person in persons" ng-click="addChatBox(person)" ng-bind="person.name"></a>
+        <form ng-submit="addPerson(personName)">
+            <input type="text" class="form-control" ng-model="personName">
+        </form>
+    </div>
+
+    <div class="chat-area">
+        <chat-window sender="person" messages="messages" ng-repeat="person in chatBoxes" close-window="removeChatBox(sender)"></chat-window>
+    </div>

@@ -1,0 +1,24 @@
+<div class="chat-box-container">
+    <div class="chat-head">
+        <span class="sender-name" ng-bind="sender.name"></span>
+        <span class="close" data-ng-click="close()">X</span>
+    </div>
+    <div class="chat-body">
+        <div class="message" ng-repeat="message in messages">
+            <div class="pull-left" ng-if="message.senderId == sender.id">
+                <strong>Me:</strong>
+                <span>{{message.message}}</span>
+            </div>
+            <div class="pull-right" ng-if="message.senderId != sender.id">
+                <strong>{{message.senderName}}:</strong>
+                <span>{{message.message}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="chat-footer display-flex">
+        <textarea class="form-control message-input" wrap="off" cols="30" rows="5" ng-model="msgToSend" ng-enter="send(msgToSend)"></textarea>
+        <a href="#" class="btn btn-info message-send">
+            <span class="glyphicon glyphicon-send"></span>
+        </a>
+    </div>
+</div>
